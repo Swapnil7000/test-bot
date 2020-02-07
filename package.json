@@ -1,0 +1,13 @@
+{
+  "name": "test-bot",
+  "description": "Test",
+  "version": "0.0.0",
+  "main": "my_bot.js",
+  "scripts": {
+    "start": "node my_bot.js"
+  },
+  "dependencies": {
+    "discord.js": "11.5.1",
+    "request": "2.88.0"
+  }
+}
