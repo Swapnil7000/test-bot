@@ -1,6 +1,6 @@
 {
-  "name": "test-bot",
-  "description": "Test",
+  "name": "test",
+  "description": "test",
   "version": "0.0.0",
   "main": "my_bot.js",
   "scripts": {
