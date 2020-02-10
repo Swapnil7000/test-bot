@@ -10,15 +10,15 @@ bot.on('message',message=>{
  let args=message.content.substring(PREFIX.length).split(" ");
  switch(args[0])
  {
-     case 'help':message.reply('How can we help you?? try jusyllabus')
+     case 'help':message.channel.sendMessage('How can we help you')
+     if(message.content===jusyllabus)
+     {
+         message.reply('See the syllabus here https://jecrcuniversity.edu.in/assets/pdf/B.Tech.%20Computer%20Secience.pdf')
+     }
      break;
      case 'Hi':message.reply('Hello')
      break;
 
- }
- if(message.content===jusyllabus)
- {
-    message.reply('See the syllabus here https://jecrcuniversity.edu.in/assets/pdf/B.Tech.%20Computer%20Secience.pdf')
  }
 })
 
