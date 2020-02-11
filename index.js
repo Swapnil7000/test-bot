@@ -8,7 +8,7 @@ bot.on('ready',()=>{
 })
 bot.on('message',message=>{
  let args=message.content.substring(PREFIX.length).split(" ");
- switch(args[0].toLowerCase())
+ switch(args[0])
  {
      case 'help':message.channel.sendMessage('How can we help you');
      if(message.content===jusyllabus)
@@ -24,7 +24,7 @@ bot.on('message',message=>{
 
 bot.on('message',message=>{
     let argr=message.content.substring(SUFIX.length).split(" ");
-    switch(argr[0].toLowerCase())
+    switch(argr[0])
     {
         case 'youtube':message.channel.sendMessage('https://www.youtube.com/');
         break;
