@@ -16,7 +16,7 @@ bot.on('message',message=>{
      break;
      case 'Hi':message.reply('Hello')
      break;
-     case 'result':message.channel.sendMessage('Check your result at https://hey-deepak.github.io/Pass-Fail-Detector/')
+     case 'juresult':message.channel.sendMessage('Check your result at https://hey-deepak.github.io/Pass-Fail-Detector/')
      break;
 
  }
