@@ -20,8 +20,8 @@ bot.on('message', message => {
             break;
         case 'embed':
             var embed = new.Discord.embed()
-                .setDescription("This is an awesome embed!!");
-            message.channel.sendMessage(embed);
+                .setDescription("This is an awesome embed!!")
+            message.channel.sendMessage(embed)
             break;
     }
 })
