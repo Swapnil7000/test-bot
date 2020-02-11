@@ -13,10 +13,10 @@ bot.on('message',message=>{
      case 'help':message.channel.sendMessage('How can we help you');
      if(message.content===jusyllabus)
      {
-         message.reply('See the syllabus here https://jecrcuniversity.edu.in/assets/pdf/B.Tech.%20Computer%20Secience.pdf');
+         message.channel.sendMessage('See the syllabus here https://jecrcuniversity.edu.in/assets/pdf/B.Tech.%20Computer%20Secience.pdf');
      }
      break;
-     case 'Hi':message.reply('Hello')
+     case 'Hi':message.channel.sendMessage('Hello')
      break;
 
  }
@@ -28,7 +28,7 @@ bot.on('message',message=>{
     {
         case 'youtube':message.channel.sendMessage('https://www.youtube.com/');
         break;
-        case 'Hi':message.reply('Hello')
+        case 'Hi':message.channel.sendMessage('Hello')
         break;
    
     }
