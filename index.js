@@ -32,23 +32,20 @@ bot.on('message', message => {
     let args = message.content.substring(PREFIX.length).split(" ");
     switch (args[0]) {
         case 'help':
-            if (message.content === 'juresult') {
                 const embed = new RichEmbed()
                     // Set the title of the field
                     .setTitle('How can we help you')
                     // Set the color of the embed
                     .setColor(0Xff8384)
                     // Set the main content of the embed
-                    .setDescription('Try using commands like !jusyllabus,juresult')
+                    .setDescription('Try using commands like !juresult')
                 // Send the embed to the same channel as the message
                 message.channel.send(embed)
-            }
             break;
         case 'Hi':
             message.reply('Hello')
             break;
-
-    }
+        }
 })
 bot.on('message', message => {
     let argr = message.content.substring(SUFIX.length).split(" ");
