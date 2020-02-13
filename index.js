@@ -27,6 +27,17 @@ bot.on('message', message => {
         // Send the embed to the same channel as the message
         message.channel.send(embed);
     }
+    if (message.content === '!jurhythm') {
+        const embed = new RichEmbed()
+            // Set the title of the field
+            .setTitle('See jurhythm details here')
+            // Set the color of the embed
+            .setColor(0Xff8384)
+            // Set the main content of the embed
+            .setDescription('https://ju-rhythm.com/')
+        // Send the embed to the same channel as the message
+        message.channel.send(embed)
+    }
 });
 bot.on('message', message => {
     let args = message.content.substring(PREFIX.length).split(" ");
@@ -50,17 +61,7 @@ bot.on('message', message => {
         case 'Hi':
             message.reply('Hello')
             break;
-        case 'jurhythm':
-            const embed = new RichEmbed()
-                // Set the title of the field
-                .setTitle('See jurhythm details here')
-                // Set the color of the embed
-                .setColor(0Xff8384)
-                // Set the main content of the embed
-                .setDescription('https://ju-rhythm.com/')
-            // Send the embed to the same channel as the message
-            message.channel.send(embed)
-            break;
+
 
     }
 })
