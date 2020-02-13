@@ -43,7 +43,7 @@ bot.on('message', message => {
                     // Set the color of the embed
                     .setColor(0Xff8384)
                     // Set the main content of the embed
-                    .setDescription('Try using commands like !juresult')
+                    .setDescription('Try using commands like !juresult,!sem1')
                 // Send the embed to the same channel as the message
                 message.channel.send(embed)
             break;
