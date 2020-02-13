@@ -50,18 +50,18 @@ bot.on('message', message => {
         case 'Hi':
             message.reply('Hello')
             break;
-        case 'jurhythm':
-            const embed = new RichEmbed()
-                // Set the title of the field
-                .setTitle('Register here for jurhythm')
-                // Set the color of the embed
-                .setColor(0Xff8384)
-                // Set the main content of the embed
-                .setDescription('JECRC UNIVERSITY is proud to announce a 3 day TECHNO CULTURAL BUSINESS FEST JU Rhythm 20 to be held on 27th - 29th February. We would be conducting all kinds of events in our fest. The fest will attract students from different colleges in and around Jaipur to showcase their talent. We invite you to participate in the BRIDGE-O-MANIA event. Registration fees is Rs 400/-  per team(online) and 400/- per team(on the spot registration  (Min 3 Max members 4/team Winning amount is worth 15k.For any queries feel free to contact :Rakesh Banjara 9079980585Email.id- rkbanjara777@gmail.comGIRISH LAKHWANI8078621603Email.id- Girishlakhwani123456@gmail.com To register kindly visit our JU RHYTJM website Link:-WWW.JU-RHYTHM.COM')
+        // case 'jurhythm':
+        //     const embed = new RichEmbed()
+        //         // Set the title of the field
+        //         .setTitle('Register here for jurhythm')
+        //         // Set the color of the embed
+        //         .setColor(0Xff8384)
+        //         // Set the main content of the embed
+        //         .setDescription('JECRC UNIVERSITY is proud to announce a 3 day TECHNO CULTURAL BUSINESS FEST JU Rhythm 20 to be held on 27th - 29th February. We would be conducting all kinds of events in our fest. The fest will attract students from different colleges in and around Jaipur to showcase their talent. We invite you to participate in the BRIDGE-O-MANIA event. Registration fees is Rs 400/-  per team(online) and 400/- per team(on the spot registration  (Min 3 Max members 4/team Winning amount is worth 15k.For any queries feel free to contact :Rakesh Banjara 9079980585Email.id- rkbanjara777@gmail.comGIRISH LAKHWANI8078621603Email.id- Girishlakhwani123456@gmail.com To register kindly visit our JU RHYTJM website Link:-WWW.JU-RHYTHM.COM')
 
-            // Send the embed to the same channel as the message
-            message.channel.send(embed)
-            break;
+        //     // Send the embed to the same channel as the message
+        //     message.channel.send(embed)
+        //     break;
 
     }
 })
