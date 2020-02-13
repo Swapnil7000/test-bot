@@ -1,9 +1,11 @@
-
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const PREFIX = '!';
 const SUFIX = 'pls ';
-const { Client, RichEmbed } = require('discord.js');
+const {
+    Client,
+    RichEmbed
+} = require('discord.js');
 bot.login(process.env.token);
 bot.on('ready', () => {
     console.log('This bot  is online');
@@ -30,24 +32,17 @@ bot.on('message', message => {
     let args = message.content.substring(PREFIX.length).split(" ");
     switch (args[0]) {
         case 'help':
-            
-bot.on('message', message => {
-    // If the message is "how to embed"
-    if (message.content === 'juresult') {
-        // We can create embeds using the MessageEmbed constructor
-        // Read more about all that you can do with the constructor
-        // over at https://discord.js.org/#/docs/main/stable/class/RichEmbed
-        const embed = new RichEmbed()
-            // Set the title of the field
-            .setTitle('How can we help you')
-            // Set the color of the embed
-            .setColor(0Xff8384)
-            // Set the main content of the embed
-            .setDescription('Try using commands like !jusyllabus,juresult')
-        // Send the embed to the same channel as the message
-        message.channel.send(embed)
-    }
-});
+            if (message.content === 'juresult') {
+                const embed = new RichEmbed()
+                    // Set the title of the field
+                    .setTitle('How can we help you')
+                    // Set the color of the embed
+                    .setColor(0Xff8384)
+                    // Set the main content of the embed
+                    .setDescription('Try using commands like !jusyllabus,juresult')
+                // Send the embed to the same channel as the message
+                message.channel.send(embed)
+            }
             break;
         case 'Hi':
             message.reply('Hello')
