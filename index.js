@@ -13,7 +13,7 @@ bot.on('ready', () => {
 
 bot.on('message', message => {
     // If the message is "how to embed"
-    if (message.content === 'juresult') {
+    if (message.content === '!juresult') {
         // We can create embeds using the MessageEmbed constructor
         // Read more about all that you can do with the constructor
         // over at https://discord.js.org/#/docs/main/stable/class/RichEmbed
