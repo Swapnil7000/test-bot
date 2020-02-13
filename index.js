@@ -31,9 +31,6 @@ bot.on('message', message => {
         case 'help':
             message.channel.sendMessage('How can we help you?? try !jusyllabus,juresult')
             break;
-        case 'jusyllabus':
-            message.reply('See the syllabus here https://jecrcuniversity.edu.in/assets/pdf/B.Tech.%20Computer%20Secience.pdf')
-            break;
         case 'Hi':
             message.reply('Hello')
             break;
