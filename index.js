@@ -8,7 +8,7 @@ bot.on('ready', () => {
     console.log('This bot  is online');
 })
 
-client.on('message', message => {
+bot.on('message', message => {
     // If the message is "how to embed"
     if (message.content === 'juresult') {
         // We can create embeds using the MessageEmbed constructor
