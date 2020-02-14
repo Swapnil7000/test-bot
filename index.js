@@ -44,7 +44,7 @@ bot.on('message', message => {
     switch (args[0]) {
         case 'sem1':
             var sem1Channel = bot.channels.get("677547196341551114")
-            const localFileAttachment = new Discord.Attachment('ju.pdf')
+            const localFileAttachment = new Discord.Attachment('test-bot/ju.pdf')
             sem1Channel.send(localFileAttachment)
             break;
         case 'sem2':
