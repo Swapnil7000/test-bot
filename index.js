@@ -49,7 +49,7 @@ bot.on('message', message => {
             break;
         case 'sem2':
             var sem2Channel = bot.channels.get("677547196341551114")
-            const localFileAttachment = new Discord.Attachment('insem2.pdf')
+            const localFileAttachment = new Discord.Attachment('ju1.pdf')
             sem2Channel.send(localFileAttachment)
             break;
         case 'help':
