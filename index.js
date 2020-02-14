@@ -47,6 +47,11 @@ bot.on('message', message => {
             const localFileAttachment = new Discord.Attachment('ju.pdf')
             sem1Channel.send(localFileAttachment)
             break;
+        case 'sem2':
+            var sem2Channel = bot.channels.get("677547196341551114")
+            const localFileAttachment = new Discord.Attachment('insem2.pdf')
+            sem2Channel.send(localFileAttachment)
+            break;
         case 'help':
             const embed = new RichEmbed()
                 // Set the title of the field
