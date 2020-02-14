@@ -42,6 +42,11 @@ bot.on('message', message => {
 bot.on('message', message => {
     let args = message.content.substring(PREFIX.length).split(" ");
     switch (args[0]) {
+        case 'sem1':
+            var sem1Channel = bot.channels.get("677547196341551114")
+            const localFileAttachment = new Discord.Attachment('ju.pdf')
+            sem1Channel.send(localFileAttachment)
+            break;
         case 'help':
             const embed = new RichEmbed()
                 // Set the title of the field
@@ -56,17 +61,6 @@ bot.on('message', message => {
         case 'Hi':
             message.reply('Hello')
             break;
-        case 'sem1':
-            var sem1Channel = bot.channels.get("677547196341551114")
-            const localFileAttachment = new Discord.Attachment('ju.pdf')
-            sem1Channel.send(localFileAttachment)
-            break;
-        case 'sem2':
-            var sem2Channel = bot.channels.get("677547196341551114")
-            const localFileAttachment = new Discord.Attachment('insem2.pdf')
-            sem2Channel.send(localFileAttachment)
-            break;
-
 
 
     }
@@ -87,7 +81,6 @@ bot.on('message', message => {
             const localFileAttachment = new Discord.Attachment('UNIT-1 MATRIX.pdf')
             generalChannel.send(localFileAttachment)
             break;
-
 
 
     }
