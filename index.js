@@ -74,13 +74,13 @@ bot.on('message', message => {
         case 'Hi':
             message.reply('Hello')
             break;
-        // case 'em1':
-        //     var generalChannel = client.channels.get("677745339473723397") // Replace with known channel ID
+        case 'em1':
+            var generalChannel = bot.channels.get("677745339473723397") // Replace with known channel ID
 
-        //     // Provide a path to a local file
-        //     const localFileAttachment = new Discord.Attachment('UNIT-1 MATRIX.pdf')
-        //     generalChannel.send(localFileAttachment)
-        //     break;
+            // Provide a path to a local file
+            const localFileAttachment = new Discord.Attachment('UNIT-1 MATRIX.pdf')
+            generalChannel.send(localFileAttachment)
+            break;
 
 
     }
