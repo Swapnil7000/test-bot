@@ -48,7 +48,7 @@ bot.on('message', message => {
             sem1Channel.send(localFileAttachment)
             break;
             case 'sem2':
-                var sem2Channel = bot.channels.get("677172621909032984")
+                var sem2Channel = bot.channels.get("677547196341551114")
                 const sem2 = new Discord.Attachment('ju1.pdf')
                 sem2Channel.send(sem2)
                 break;
