@@ -90,8 +90,8 @@ bot.on('message', message => {
             var generalChannel = bot.channels.get("677745339473723397") // Replace with known channel ID
 
             // Provide a path to a local file
-            const localFileAttachment = new Discord.Attachment('Mechanics Notes.pdf')
-            generalChannel.send(localFileAttachment)
+            const emech = new Discord.Attachment('Mechanics Notes.pdf')
+            generalChannel.send(emech)
             break;
 
 
