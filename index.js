@@ -47,11 +47,11 @@ bot.on('message', message => {
             const localFileAttachment = new Discord.Attachment('ju.pdf')
             sem1Channel.send(localFileAttachment)
             break;
-            case 'sem2':
-                var sem2Channel = bot.channels.get("677547196341551114")
-                const sem2 = new Discord.Attachment('ju1.pdf')
-                sem2Channel.send(sem2)
-                break;
+        case 'sem2':
+            var sem2Channel = bot.channels.get("677547196341551114")
+            const sem2 = new Discord.Attachment('ju1.pdf')
+            sem2Channel.send(sem2)
+            break;
         case 'help':
             const embed = new RichEmbed()
                 // Set the title of the field
@@ -84,6 +84,13 @@ bot.on('message', message => {
 
             // Provide a path to a local file
             const localFileAttachment = new Discord.Attachment('UNIT-1 MATRIX.pdf')
+            generalChannel.send(localFileAttachment)
+            break;
+        case 'emech':
+            var generalChannel = bot.channels.get("677745339473723397") // Replace with known channel ID
+
+            // Provide a path to a local file
+            const localFileAttachment = new Discord.Attachment('Mechanics Notes.pdf')
             generalChannel.send(localFileAttachment)
             break;
 
