@@ -59,7 +59,7 @@ bot.on('message', message => {
                 // Set the color of the embed
                 .setColor(0Xff8384)
                 // Set the main content of the embed
-                .setDescription('Try using commands like !juresult,!sem1,!jurhythm')
+                .setDescription('Try using commands like !juresult,!sem1,!jurhythm,!sem2')
             // Send the embed to the same channel as the message
             message.channel.send(embed)
             break;
@@ -84,7 +84,10 @@ bot.on('message', message => {
 
             // Provide a path to a local file
             const localFileAttachment = new Discord.Attachment('UNIT-1 MATRIX.pdf')
-            generalChannel.send(localFileAttachment)
+            generalChannel.send(localFileAttachment) 
+            // Provide a path to a local file
+            const em1 = new Discord.Attachment('UNIT-2 SEQUENCE AND SERIES.pdf')
+            generalChannel.send(em1)
             break;
         case 'emech':
             var generalChannel = bot.channels.get("677745339473723397") // Replace with known channel ID
