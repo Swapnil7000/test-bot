@@ -94,7 +94,7 @@ bot.on('message', message => {
     
                 // Provide a path to a local file
                 const emvector = new Discord.Attachment('Vector calculus.pdf')
-                generalChannel.send(localFileAttachment) 
+                generalChannel.send(emvector) 
                 // Provide a path to a local file
                 const emdi = new Discord.Attachment('Double Integration.pdf')
                 generalChannel.send(emdi)
