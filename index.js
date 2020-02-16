@@ -79,7 +79,7 @@ bot.on('message', message => {
         case 'Hi':
             message.reply('Hello')
             break;
-        case 'em1':
+        case 'em2':
             var generalChannel = bot.channels.get("677745339473723397") // Replace with known channel ID
 
             // Provide a path to a local file
@@ -89,6 +89,18 @@ bot.on('message', message => {
             const em1 = new Discord.Attachment('UNIT-2 SEQUENCE AND SERIES.pdf')
             generalChannel.send(em1)
             break;
+            case 'em1':
+                var generalChannel = bot.channels.get("677745339473723397") // Replace with known channel ID
+    
+                // Provide a path to a local file
+                const emvector = new Discord.Attachment('Vector calculus.pdf')
+                generalChannel.send(localFileAttachment) 
+                // Provide a path to a local file
+                const emdi = new Discord.Attachment('Double Integration.pdf')
+                generalChannel.send(emdi)
+                const embg = new Discord.Attachment('Beta and Gamma function.pdf')
+                generalChannel.send(embg)
+                break;    
         case 'emech':
             var generalChannel = bot.channels.get("677745339473723397") // Replace with known channel ID
 
